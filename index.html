@@ -22,10 +22,10 @@
                 </div>
                 <div class="menuItems">
                     <ul class="menu">
-                        <li><a href="#">Inicio</a></li>
+                        <li><a href="./index.html">Inicio</a></li>
                         <li><a href="#">Catálogo</a></li>
-                        <li><a href="#">Registro</a></li>
-                        <li><a href="#">Iniciar sesión</a></li>
+                        <li><a href="./pages/registro.html">Registro</a></li>
+                        <li><a href="./pages/login.html">Iniciar sesión</a></li>
                     </ul>
                 </div>
 
@@ -39,7 +39,7 @@
         <div class="container">
             <h1>Bienvenido al Catálogo de Libros</h1>
             <p>Encuentra tu próximo libro favorito aquí.</p>
-            <a href="registro.html" class="btn">Registrarse</a>
+            <a href="./pages/registro.html" class="btn">Registrarse</a>
         </div>
     </section>
 
@@ -88,14 +88,17 @@
                     </div>
                     <!-- Agrega más elementos carousel-item según sea necesario -->
                 </div>
-                <a class="carousel-control-prev" href="#carouselFeaturedBooks" role="button" data-slide="prev">
+                <div class="btnCarouselContainer">
+                    <a class="carousel-control-prev btnCarousel" href="#carouselFeaturedBooks" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
+                    <span class="sr-only"> < Anterior</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselFeaturedBooks" role="button" data-slide="next">
+                <a class="carousel-control-next btnCarousel" href="#carouselFeaturedBooks" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Siguiente</span>
+                    <span class="sr-only">Siguiente > </span>
                 </a>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -114,14 +117,14 @@
                                 <img src="./img/spainFlag.png" alt="" class="countryFlag">
                                 <h3>Alicia en el País de las maravillas</h3>
                             </div>
-                            
+
                             <div class="title">
                                 <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
                                 <h3>Alice in Wonderland</h3>
                             </div>
                             <p>Autor / Author: Lee Carroll</p>
                             <p>Infantil / Epico.</p>
-                            <a href="#" class="btn">Ver libro</a>
+                            <a href="./pages/detalle.html" class="btnDetail">Ver libro</a>
                         </div>
                     </div>
                 </div>
@@ -134,14 +137,14 @@
                                 <img src="./img/spainFlag.png" alt="" class="countryFlag">
                                 <h3>1984</h3>
                             </div>
-                            
-                        <div class="title">
-                            <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
-                            <h3>1984</h3>
-                        </div>
+
+                            <div class="title">
+                                <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
+                                <h3>1984</h3>
+                            </div>
                             <p>Autor / Author: Gerge Orwel</p>
                             <p>Ficción.</p>
-                            <a href="#" class="btn">Ver libro</a>
+                            <a href="./pages/detalle.html" class="btnDetail">Ver libro</a>
                         </div>
                     </div>
                 </div>
@@ -154,14 +157,14 @@
                                 <img src="./img/spainFlag.png" alt="" class="countryFlag">
                                 <h3>Hamlet</h3>
                             </div>
-                            
+
                             <div class="title">
                                 <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
                                 <h3>Hamlet</h3>
                             </div>
                             <p>Autor / Author: William Shakespeare</p>
                             <p>Breve descripción del género.</p>
-                            <a href="#" class="btn">Ver libros</a>
+                            <a href="./pages/detalle.html" class="btnDetail">Ver libro</a>
                         </div>
                     </div>
                 </div>
@@ -174,14 +177,14 @@
                                 <img src="./img/spainFlag.png" alt="" class="countryFlag">
                                 <h3>Una nueva Tierra</h3>
                             </div>
-                            
+
                             <div class="title">
                                 <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
                                 <h3>A New Earth</h3>
                             </div>
                             <p>Autor / Author: Eckhart Tolle</p>
                             <p>Breve descripción del género.</p>
-                            <a href="#" class="btn">Ver libro</a>
+                            <a href="./pages/detalle.html" class="btnDetail">Ver libro</a>
                         </div>
                     </div>
                 </div>
@@ -192,16 +195,16 @@
                         <div class="card-content">
                             <div class="title">
                                 <img src="./img/spainFlag.png" alt="" class="countryFlag">
-                                <h3>5 Lenguajes dle amor</h3>
+                                <h3>5 Lenguajes del amor</h3>
                             </div>
-                            
+
                             <div class="title">
                                 <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
                                 <h3>the 5 Love Languages</h3>
                             </div>
                             <p>Autor / Author: Gary Chapman</p>
                             <p>Breve descripción del género.</p>
-                            <a href="#" class="btn">Ver libro</a>
+                            <a href="./pages/detalle.html" class="btnDetail">Ver libro</a>
                         </div>
                     </div>
                 </div>
@@ -214,14 +217,14 @@
                                 <img src="./img/spainFlag.png" alt="" class="countryFlag">
                                 <h3>Soy El numero 4</h3>
                             </div>
-                            
+
                             <div class="title">
                                 <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
                                 <h3> I am number Four</h3>
                             </div>
                             <p>Autor / Author: Pittacus Lore</p>
                             <p>Ciencia Ficción.</p>
-                            <a href="#" class="btn">Ver libro</a>
+                            <a href="./pages/detalle.html" class="btnDetail">Ver libro</a>
                         </div>
                     </div>
                 </div>
@@ -235,14 +238,14 @@
                                 <img src="./img/spainFlag.png" alt="" class="countryFlag">
                                 <h3>Los cuatro acuerdos</h3>
                             </div>
-                            
+
                             <div class="title">
                                 <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
                                 <h3>The Four Agreements</h3>
                             </div>
                             <p>Autor / Author: Miguel Ruiz</p>
                             <p>Superación.</p>
-                            <a href="#" class="btn">Ver libro</a>
+                            <a href="./pages/detalle.html" class="btnDetail">Ver libro</a>
                         </div>
                     </div>
                 </div>
@@ -255,14 +258,14 @@
                                 <img src="./img/spainFlag.png" alt="" class="countryFlag">
                                 <h3>Hábitos Atomicos</h3>
                             </div>
-                            
+
                             <div class="title">
                                 <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
                                 <h3>Atomic Habits</h3>
                             </div>
                             <p>Autor / Author: James Clear</p>
                             <p>Breve descripción del género.</p>
-                            <a href="#" class="btn">Ver libros</a>
+                            <a href="./pages/detalle.html" class="btnDetail">Ver libro</a>
                         </div>
                     </div>
                 </div>
@@ -275,14 +278,14 @@
                                 <img src="./img/spainFlag.png" alt="" class="countryFlag">
                                 <h3>Steve Jobs</h3>
                             </div>
-                            
+
                             <div class="title">
                                 <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
                                 <h3>Steve Jobs</h3>
                             </div>
                             <p>Autor / Author: Walter Isaacson</p>
                             <p>Breve descripción del género.</p>
-                            <a href="#" class="btn">Biografia</a>
+                            <a href="./pages/detalle.html" class="btnDetail">Biografia</a>
                         </div>
                     </div>
                 </div>
@@ -304,6 +307,49 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                const carouselItems = document.querySelectorAll('.carousel-item');
+                const prevButton = document.querySelector('.carousel-control-prev');
+                const nextButton = document.querySelector('.carousel-control-next');
+                let currentIndex = 0;
+
+                // Función para mostrar el slide actual
+                function showSlide(index) {
+                    carouselItems.forEach(item => item.style.display = 'none');
+                    carouselItems[index].style.display = 'block';
+                }
+
+                // Función para mostrar el slide anterior
+                function prevSlide() {
+                    currentIndex--;
+                    if (currentIndex < 0) {
+                        currentIndex = carouselItems.length - 1;
+                    }
+                    showSlide(currentIndex);
+                }
+
+                // Función para mostrar el siguiente slide
+                function nextSlide() {
+                    currentIndex++;
+                    if (currentIndex >= carouselItems.length) {
+                        currentIndex = 0;
+                    }
+                    showSlide(currentIndex);
+                }
+
+                // Mostrar el primer slide al cargar la página
+                showSlide(currentIndex);
+
+                // Event listener para el botón anterior
+                prevButton.addEventListener('click', prevSlide);
+
+                // Event listener para el botón siguiente
+                nextButton.addEventListener('click', nextSlide);
+            });
+
+
+    </script>
 </body>
 
 </html>

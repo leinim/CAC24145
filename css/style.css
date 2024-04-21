@@ -28,7 +28,7 @@ body {
     display: flex;
     align-items: center;
     column-gap: 10px;
-    border-radius:  50px  50px;
+    border-radius: 50px 50px;
     /*background-color: #988780;*/
     padding-right: 10px;
 }
@@ -113,14 +113,14 @@ nav h1 {
     background-color: #f8f9fa;
     padding: 50px 0;
     text-align: center;
-    
-    
+
+
 }
 
 .search-section h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    
+
 }
 
 .search-section input[type="search"] {
@@ -144,11 +144,11 @@ nav h1 {
     background-color: #0056b3;
 }
 
-.searchImg{
+.searchImg {
     height: 30px;
     width: auto;
     align-self: center;
-   
+
 }
 
 /* Sección de Libros Más Aclamados */
@@ -168,6 +168,22 @@ body {
 }
 
 /* Estilos del carrusel */
+
+.btnCarouselContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnCarousel{
+padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
 .carousel {
     margin-top: 50px;
 }
@@ -259,39 +275,38 @@ body {
     grid-gap: 10px;
 
 }
-.card{
+
+.card {
     margin-bottom: 20px;
     text-align: center;
     background-color: #e7ded9;
     border-radius: 20px;
 }
-.title{
+
+.title {
     display: flex;
     align-items: center;
     text-align: center;
 }
-.countryFlag{
+
+.countryFlag {
     width: auto;
     height: 30px;
 }
 
-.btn{
-    color: black;
-    background-color: #007bff;
+.btnDetail {
+    padding: 10px 20px;
+    font-size: 18px;
     text-decoration: none;
-    border: solid 1px #007bff;
-    border-radius: 10px;
-    padding: 10px;
-    
-
-}
-.btn:hover{
-    color: grey;
-    background-color:aquamarine;
-    border-color: orange ;
-    border: solid 1px ;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
 }
 
+.btnDetail:hover {
+    background-color: #0056b3;
+}
 
 
 /* Footer */
