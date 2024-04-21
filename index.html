@@ -10,25 +10,25 @@
 
 <body>
 
-   
-    
+
+
     <!-- Navbar -->
     <header>
         <nav>
             <div class="container menuNav">
                 <div class="logo">
-                    <a href="" class="enlaceLogo"><img src="./img/CaCBooksLogo.jpg" alt="" class="imagenLogo"> </a>
+                    <a href="" class="enlaceLogo"><img src="./img/CaCBooksLogo.png" alt="" class="imagenLogo"> </a>
                     <h2>TuLibroi.cac</h2>
                 </div>
                 <div class="menuItems">
                     <ul class="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Catálogo</a></li>
-                    <li><a href="#">Registro</a></li>
-                    <li><a href="#">Iniciar sesión</a></li>
-                </ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Registro</a></li>
+                        <li><a href="#">Iniciar sesión</a></li>
+                    </ul>
                 </div>
-                
+
             </div>
         </nav>
     </header>
@@ -47,7 +47,8 @@
     <section class="search-section">
         <div class="container">
             <h2>Buscar Libros</h2>
-            <form>
+            <form class="searchForm">
+                <img src="./img/lupaIcono.png" alt="" class="searchImg">
                 <input type="search" placeholder="Buscar libros...">
                 <button type="submit">Buscar</button>
             </form>
@@ -62,7 +63,7 @@
         </div>
     </section>
 
-   
+
     <!-- Carousel de libros destacados -->
     <section class="featured-books">
         <div class="container">
@@ -107,9 +108,58 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200" alt="Género 1">
+                        <img src="./books/1.Book_Alice.jpg" alt="Género 1">
                         <div class="card-content">
-                            <h3>Género 1</h3>
+                            <div class="title">
+                                <img src="./img/spainFlag.png" alt="" class="countryFlag">
+                                <h3>Alicia en el País de las maravillas</h3>
+                            </div>
+                            
+                            <div class="title">
+                                <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
+                                <h3>Alice in Wonderland</h3>
+                            </div>
+                            <p>Autor / Author: Lee Carroll</p>
+                            <p>Infantil / Epico.</p>
+                            <a href="#" class="btn">Ver libro</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite este bloque para cada género -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./books/2.Book_1984.jpg" alt="Género 1">
+                        <div class="card-content">
+                            <div class="title">
+                                <img src="./img/spainFlag.png" alt="" class="countryFlag">
+                                <h3>1984</h3>
+                            </div>
+                            
+                        <div class="title">
+                            <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
+                            <h3>1984</h3>
+                        </div>
+                            <p>Autor / Author: Gerge Orwel</p>
+                            <p>Ficción.</p>
+                            <a href="#" class="btn">Ver libro</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite este bloque para cada género -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./books/3.Book_Hamlet.jpg" alt="Género 1">
+                        <div class="card-content">
+                            <div class="title">
+                                <img src="./img/spainFlag.png" alt="" class="countryFlag">
+                                <h3>Hamlet</h3>
+                            </div>
+                            
+                            <div class="title">
+                                <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
+                                <h3>Hamlet</h3>
+                            </div>
+                            <p>Autor / Author: William Shakespeare</p>
                             <p>Breve descripción del género.</p>
                             <a href="#" class="btn">Ver libros</a>
                         </div>
@@ -118,55 +168,60 @@
                 <!-- Repite este bloque para cada género -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200" alt="Género 1">
+                        <img src="./books/4.Book_A_New_Earth.jpg" alt="Género 1">
                         <div class="card-content">
-                            <h3>Género 1</h3>
+                            <div class="title">
+                                <img src="./img/spainFlag.png" alt="" class="countryFlag">
+                                <h3>Una nueva Tierra</h3>
+                            </div>
+                            
+                            <div class="title">
+                                <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
+                                <h3>A New Earth</h3>
+                            </div>
+                            <p>Autor / Author: Eckhart Tolle</p>
                             <p>Breve descripción del género.</p>
-                            <a href="#" class="btn">Ver libros</a>
+                            <a href="#" class="btn">Ver libro</a>
                         </div>
                     </div>
                 </div>
                 <!-- Repite este bloque para cada género -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200" alt="Género 1">
+                        <img src="./books/5.Book_Five_Loves_Languages.jpg" alt="Género 1">
                         <div class="card-content">
-                            <h3>Género 1</h3>
+                            <div class="title">
+                                <img src="./img/spainFlag.png" alt="" class="countryFlag">
+                                <h3>5 Lenguajes dle amor</h3>
+                            </div>
+                            
+                            <div class="title">
+                                <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
+                                <h3>the 5 Love Languages</h3>
+                            </div>
+                            <p>Autor / Author: Gary Chapman</p>
                             <p>Breve descripción del género.</p>
-                            <a href="#" class="btn">Ver libros</a>
+                            <a href="#" class="btn">Ver libro</a>
                         </div>
                     </div>
                 </div>
                 <!-- Repite este bloque para cada género -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200" alt="Género 1">
+                        <img src="./books/6.Book_I_Am_Number_4.jpg" alt="Género 1">
                         <div class="card-content">
-                            <h3>Género 1</h3>
-                            <p>Breve descripción del género.</p>
-                            <a href="#" class="btn">Ver libros</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repite este bloque para cada género -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" alt="Género 1">
-                        <div class="card-content">
-                            <h3>Género 1</h3>
-                            <p>Breve descripción del género.</p>
-                            <a href="#" class="btn">Ver libros</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repite este bloque para cada género -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" alt="Género 1">
-                        <div class="card-content">
-                            <h3>Género 1</h3>
-                            <p>Breve descripción del género.</p>
-                            <a href="#" class="btn">Ver libros</a>
+                            <div class="title">
+                                <img src="./img/spainFlag.png" alt="" class="countryFlag">
+                                <h3>Soy El numero 4</h3>
+                            </div>
+                            
+                            <div class="title">
+                                <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
+                                <h3> I am number Four</h3>
+                            </div>
+                            <p>Autor / Author: Pittacus Lore</p>
+                            <p>Ciencia Ficción.</p>
+                            <a href="#" class="btn">Ver libro</a>
                         </div>
                     </div>
                 </div>
@@ -174,9 +229,38 @@
 
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200" alt="Género 1">
+                        <img src="./books/7.Book_Four_Agreements.jpg" alt="Género 1">
                         <div class="card-content">
-                            <h3>Género 1</h3>
+                            <div class="title">
+                                <img src="./img/spainFlag.png" alt="" class="countryFlag">
+                                <h3>Los cuatro acuerdos</h3>
+                            </div>
+                            
+                            <div class="title">
+                                <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
+                                <h3>The Four Agreements</h3>
+                            </div>
+                            <p>Autor / Author: Miguel Ruiz</p>
+                            <p>Superación.</p>
+                            <a href="#" class="btn">Ver libro</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite este bloque para cada género -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./books/8.Book_Atomics_Habits.jpg" alt="Género 1">
+                        <div class="card-content">
+                            <div class="title">
+                                <img src="./img/spainFlag.png" alt="" class="countryFlag">
+                                <h3>Hábitos Atomicos</h3>
+                            </div>
+                            
+                            <div class="title">
+                                <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
+                                <h3>Atomic Habits</h3>
+                            </div>
+                            <p>Autor / Author: James Clear</p>
                             <p>Breve descripción del género.</p>
                             <a href="#" class="btn">Ver libros</a>
                         </div>
@@ -185,22 +269,20 @@
                 <!-- Repite este bloque para cada género -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200" alt="Género 1">
+                        <img src="./books/9.Book_SteveJobsR.jpg" alt="Género 1">
                         <div class="card-content">
-                            <h3>Género 1</h3>
+                            <div class="title">
+                                <img src="./img/spainFlag.png" alt="" class="countryFlag">
+                                <h3>Steve Jobs</h3>
+                            </div>
+                            
+                            <div class="title">
+                                <img src="./img/united_kingdom_Flag.png" alt="" class="countryFlag">
+                                <h3>Steve Jobs</h3>
+                            </div>
+                            <p>Autor / Author: Walter Isaacson</p>
                             <p>Breve descripción del género.</p>
-                            <a href="#" class="btn">Ver libros</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repite este bloque para cada género -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" alt="Género 1">
-                        <div class="card-content">
-                            <h3>Género 1</h3>
-                            <p>Breve descripción del género.</p>
-                            <a href="#" class="btn">Ver libros</a>
+                            <a href="#" class="btn">Biografia</a>
                         </div>
                     </div>
                 </div>
