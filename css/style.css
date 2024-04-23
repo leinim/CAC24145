@@ -169,13 +169,13 @@ body {
 
 /* Estilos del carrusel */
 
-.btnCarouselContainer{
+.btnCarouselContainer {
     display: flex;
     justify-content: space-between;
 }
 
-.btnCarousel{
-padding: 10px 20px;
+.btnCarousel {
+    padding: 10px 20px;
     font-size: 18px;
     text-decoration: none;
     background-color: #007bff;
@@ -336,4 +336,40 @@ padding: 10px 20px;
 .footer span {
     display: block;
     margin-bottom: 10px;
+}
+
+/* Sección Detalle */
+.detalle-card {
+    max-width: 300px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #e7ded9;
+
+    h3 {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+#detalle-volver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 100px;
+    padding: .5rem;
+    background-color: #13292a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+#detalle-volver:hover {
+    opacity: .9;
 }
