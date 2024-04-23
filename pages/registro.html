@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
+    <link href="../css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <div class="container menuNav">
+                <div class="logo">
+                    <a href="" class="enlaceLogo"><img src="../assets/imgs/CaCBooksLogo.jpg" alt="" class="imagenLogo"> </a>
+                    <h2>TuLibroi.cac</h2>
+                </div>
+                <div class="menuItems">
+                    <ul class="menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./catalogo.html">Catálogo</a></li>
+                        <li><a href="./registro.html">Registro</a></li>
+                        <li><a href="./login.html">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <form action="" method="post">
+                <h2>Registro</h2>
+                <div>
+                    <input type="text" placeholder="Nombre" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <input type="text" placeholder="Apellido" id="apellido" name="apellido">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email" id="email" name="email">
+                </div>
+                <div>
+                    <input type="password" placeholder="Contraseña" id="password" name="password">
+                </div>
+                <div>
+                    <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" id="fechaNacimiento"
+                        name="fechaNacimiento">
+                </div>
+                <div>
+                    <select name="pais" id="pais">
+                        <option value="">País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Perú</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" id="terminos">
+                    <label type="textoCheck" for="terminos">Acepto términos y condiciones</label>
+                </div>
+                <div>
+                    <input class="boton" type="submit" value="Registrarse">
+                </div>
+                <div>
+                    <a href="#">Necesitas ayuda?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
 </body>
+
 </html>
