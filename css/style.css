@@ -2,10 +2,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1200px; 
     margin: 0 auto;
     padding: 0 20px;
 
@@ -22,6 +25,11 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #695853;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    position: sticky;
+    z-index: 3;
 }
 
 .logo {
@@ -29,8 +37,9 @@ body {
     align-items: center;
     column-gap: 10px;
     border-radius: 50px 50px;
-    /*background-color: #988780;*/
-    padding-right: 10px;
+    background-color: #988780;
+    padding:10px;
+   
 }
 
 .imagenLogo {
@@ -45,7 +54,7 @@ body {
 nav {
     background-color: #e7ded9;
     color: #fff;
-    padding: 20px 0;
+    /*padding: 20px 0;*/
 }
 
 nav ul {
