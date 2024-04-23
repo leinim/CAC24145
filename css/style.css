@@ -11,18 +11,26 @@ body {
 
 }
 
+
+
+
+
 /* Navbar */
 
 .menuNav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #695853;
 }
 
 .logo {
     display: flex;
     align-items: center;
     column-gap: 10px;
+    border-radius: 50px 50px;
+    /*background-color: #988780;*/
+    padding-right: 10px;
 }
 
 .imagenLogo {
@@ -35,7 +43,7 @@ body {
 }
 
 nav {
-    background-color: #343a40;
+    background-color: #e7ded9;
     color: #fff;
     padding: 20px 0;
 }
@@ -54,7 +62,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 nav h1 {
@@ -67,7 +75,7 @@ nav h1 {
 
 /* Hero Section */
 .hero {
-    background-color: #343a40;
+    background-color: #e7ded9;
     color: #fff;
     padding: 100px 0;
     text-align: center;
@@ -76,11 +84,13 @@ nav h1 {
 .hero h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: black;
 }
 
 .hero p {
     font-size: 18px;
     margin-bottom: 20px;
+    color: black;
 }
 
 .hero .btn {
@@ -99,14 +109,18 @@ nav h1 {
 
 /* Sección de Búsqueda de Libros */
 .search-section {
+
     background-color: #f8f9fa;
     padding: 50px 0;
     text-align: center;
+
+
 }
 
 .search-section h2 {
     font-size: 24px;
     margin-bottom: 20px;
+
 }
 
 .search-section input[type="search"] {
@@ -130,6 +144,13 @@ nav h1 {
     background-color: #0056b3;
 }
 
+.searchImg {
+    height: 30px;
+    width: auto;
+    align-self: center;
+
+}
+
 /* Sección de Libros Más Aclamados */
 
 /*Carrousel Destacados*/
@@ -147,6 +168,22 @@ body {
 }
 
 /* Estilos del carrusel */
+
+.btnCarouselContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnCarousel{
+padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
 .carousel {
     margin-top: 50px;
 }
@@ -238,6 +275,39 @@ body {
     grid-gap: 10px;
 
 }
+
+.card {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #e7ded9;
+    border-radius: 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.countryFlag {
+    width: auto;
+    height: 30px;
+}
+
+.btnDetail {
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.btnDetail:hover {
+    background-color: #0056b3;
+}
+
 
 /* Footer */
 .footer {
