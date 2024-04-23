@@ -371,5 +371,5 @@ body {
 }
 
 #detalle-volver:hover {
-    opacity: .9;
+    background-color: black;
 }
