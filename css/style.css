@@ -1,16 +1,21 @@
 /* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px 20px;
+    
 }
 
 
@@ -39,8 +44,8 @@ nav{
     border-radius: 100px;
     background-color: #988780;
     padding:15px;
-    height: 45px;
-    width:300px;
+    height: 70px;
+    width:260px;
    
 }
 .logo a{
@@ -49,13 +54,13 @@ nav{
 }
 
 .imagenLogo {
-    width: 100px;
+    width: 90px;
     height: auto;
 }
 
-.logo>h2 {
-    font-size: 30px;
-    font-weight:500;
+.logo>a>h2 {
+    font-size: 24px;
+    font-weight:600;
 }
 
 
@@ -89,7 +94,7 @@ nav h1 {
 .hero {
     background-color: #e7ded9;
     color: #fff;
-    padding: 100px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -109,24 +114,21 @@ nav h1 {
     padding: 10px 20px;
     font-size: 18px;
     text-decoration: none;
-    background-color: #007bff;
+    background-color: #13292a;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius:50px;
 }
 
 .hero .btn:hover {
-    background-color: #0056b3;
+    background-color: #988780;
 }
 
 /* Sección de Búsqueda de Libros */
 .search-section {
-
     background-color: #f8f9fa;
-    padding: 50px 0;
+    padding: 40px 0;
     text-align: center;
-
-
 }
 
 .search-section h2 {
@@ -140,27 +142,37 @@ nav h1 {
     width: 60%;
     font-size: 18px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius:50px ;
 }
 
 .search-section button[type="submit"] {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #007bff;
+    height: 50px;
+    width: 50px;
+    background-color: #13292a;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+
 }
 
 .search-section button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #988780;
+
 }
 
 .searchImg {
     height: 30px;
     width: auto;
     align-self: center;
+    
 
+}
+.searchForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Sección de Libros Más Aclamados */
@@ -178,14 +190,15 @@ nav h1 {
     padding: 10px 20px;
     font-size: 18px;
     text-decoration: none;
-    background-color: #007bff;
+    background-color: #13292a;
     color: #fff;
     border: none;
     border-radius: 5px;
 }
 
 .carousel {
-    margin-top: 50px;
+    margin-top: 20px;
+    
 }
 
 .carousel-inner {
@@ -231,14 +244,14 @@ nav h1 {
     padding: 10px 20px;
     font-size: 18px;
     text-decoration: none;
-    background-color: #007bff;
+    background-color: #13292a;
     color: #fff;
     border: none;
     border-radius: 5px;
 }
 
 .carousel-caption .btn:hover {
-    background-color: #0056b3;
+    background-color: #988780;
 }
 
 .popular-books {
@@ -277,35 +290,51 @@ nav h1 {
 }
 
 .card {
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
     background-color: #e7ded9;
     border-radius: 20px;
+    padding: 30px;
+
+}
+
+.card img{
+    border-radius: 20px;
+}
+
+.card-content p{
+    margin-top:10px ;
+    margin-bottom: 20px;
 }
 
 .title {
+    width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    height: 50px;
 }
 
 .countryFlag {
     width: auto;
-    height: 30px;
+    height: 25px;
 }
 
 .btnDetail {
+
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
-    background-color: #007bff;
+    background-color: #13292a;
     color: #fff;
     border: none;
     border-radius: 5px;
 }
 
 .btnDetail:hover {
-    background-color: #0056b3;
+    background-color: #988780;
 }
 
 
@@ -340,19 +369,44 @@ nav h1 {
 
 /* Sección Detalle */
 .detalle-card {
-    max-width: 300px;
+    max-width: 600px;
     margin: 2rem auto;
     padding: 1rem;
     border-radius: 20px;
     background-color: #e7ded9;
-
-    h3 {
-        text-align: center;
-    }
+    display: flex;
+    flex-direction: column;
 
     img {
-        width: 100%;
+        width: 90%;
+        border-radius: 20px;
     }
+}
+
+.detalle-titulo{
+    width: 100%;
+    text-align: center;
+}
+.detalle-titulo h2{
+    margin-bottom: 16px;
+}
+.detalle-content{
+    display: flex;
+    justify-content: space-around;
+}
+.detalle-libro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.detalle-info{
+width: 50%;
+}
+.detalle-info p{
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 #detalle-volver {
@@ -386,16 +440,21 @@ nav h1 {
 }
 .cuadroForm{
     background-color: #695853;
-    width: 350px;
-    height: 400px;
+    width: 380px;
+    height: 450px;
     border-radius:50px ;
-    padding: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cuadroForm div{
     width:100%;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    color: white;
 }
 
 .camposForm{
@@ -408,6 +467,7 @@ nav h1 {
     border-style:none;
     font-size: 15px;
 }
+
 .cuadroForm h2{
     text-align: center;
     font-size: 30px;
@@ -430,10 +490,33 @@ nav h1 {
     background-color: #988780;
 }
 
+
+
 /*REGISTRO*/
+.div-terminos-condiciones{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 40px;
+    gap:2px;
+    font-size: 12px;
+}
+
 #terminos{
-    height: 50px;
-    border-radius: 100%;
-    background-color: red;
-    color:red;
+    width: 10px;
+    height: 10px;
+    appearance: none;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#terminos:checked{
+    background-color: #13292A;  
+    box-shadow: inset 0 0 0 2px #ccc;
+}
+.cuadroForm div a{   
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
 }
