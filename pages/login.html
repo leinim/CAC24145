@@ -11,37 +11,43 @@
 <body>
     <header>
         <nav>
-            <div class="container menuNav">
+            <div class="menuNav">
                 <div class="logo">
-                    <a href="../index.html" class="enlaceLogo"><img src="../assets/imgs/CaCBooksLogo.jpg" alt="" class="imagenLogo">
-                    </a>
-                    <h2>TuLibroi.cac</h2>
+
+                    <a href="#" class="enlaceLogo"><img src="/assets/imgs/CaCBooksLogo.png" alt="" class="imagenLogo"> </a>
+                    <a href="#"><h2>TuLibro.cac</h2></a>
                 </div>
                 <div class="menuItems">
                     <ul class="menu">
+
                         <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./catalogo.html">Catálogo</a></li>
-                        <li><a href="./registro.html">Registro</a></li>
-                        <li><a href="#">Iniciar sesión</a></li>
+                        <li><a href="#">Catálogo</a></li>
+
+                        <li><a href="/pages/registro.html">Registro</a></li>
+                        <li><a href="/pages/login.html">Iniciar sesión</a></li>
                     </ul>
                 </div>
+
             </div>
         </nav>
     </header>
-    <main>
-        <form action="#" method="get">
+    <main class="fondoLibros">
+        <form action="#" method="get" class="cuadroForm">
 
             <div>
-                <h1>Login</h1>
+                <h2>Login</h2>
             </div>
             <div>
-                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="email" placeholder="Email" class="camposForm">
             </div>
             <div>
-                <input type="password" name="password" placeholder="Contraseña">
+                <input type="password" name="password" placeholder="Contraseña" class="camposForm">
             </div>
             <div>
-                <input type="submit" name="enviar" value="Enviar">
+                <input type="submit" name="enviar" value="Ingresar" class="boton" class="camposForm">
+            </div>
+            <div>
+                ¿No tienes cuenta? <a href="registro.html">Registrarse</a>
             </div>
 
         </form>
