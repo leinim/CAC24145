@@ -11,45 +11,48 @@
 <body>
     <header>
         <nav>
-            <div class="container menuNav">
+            <div class="menuNav">
                 <div class="logo">
-                    <a href="" class="enlaceLogo"><img src="../assets/imgs/CaCBooksLogo.jpg" alt="" class="imagenLogo"> </a>
-                    <h2>TuLibroi.cac</h2>
+
+                    <a href="#" class="enlaceLogo"><img src="/assets/imgs/CaCBooksLogo.png" alt="" class="imagenLogo"> </a>
+                    <a href="#"><h2>TuLibro.cac</h2></a>
                 </div>
                 <div class="menuItems">
                     <ul class="menu">
+
                         <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./catalogo.html">Catálogo</a></li>
-                        <li><a href="./registro.html">Registro</a></li>
-                        <li><a href="./login.html">Iniciar sesión</a></li>
+                        <li><a href="#">Catálogo</a></li>
+
+                        <li><a href="/pages/registro.html">Registro</a></li>
+                        <li><a href="/pages/login.html">Iniciar sesión</a></li>
                     </ul>
                 </div>
+
             </div>
         </nav>
-
     </header>
-    <main>
+    <main class="fondoLibros">
         <section>
-            <form action="" method="post">
+            <form action="" method="post" class="cuadroForm">
                 <h2>Registro</h2>
                 <div>
-                    <input type="text" placeholder="Nombre" id="nombre" name="nombre">
+                    <input type="text" placeholder="Nombre" id="nombre" name="nombre" class="camposForm">
                 </div>
                 <div>
-                    <input type="text" placeholder="Apellido" id="apellido" name="apellido">
+                    <input type="text" placeholder="Apellido" id="apellido" name="apellido" class="camposForm">
                 </div>
                 <div>
-                    <input type="email" placeholder="Email" id="email" name="email">
+                    <input type="email" placeholder="Email" id="email" name="email" class="camposForm">
                 </div>
                 <div>
-                    <input type="password" placeholder="Contraseña" id="password" name="password">
+                    <input type="password" placeholder="Contraseña" id="password" name="password" class="camposForm">
                 </div>
                 <div>
                     <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" id="fechaNacimiento"
-                        name="fechaNacimiento">
+                        name="fechaNacimiento" class="camposForm">
                 </div>
                 <div>
-                    <select name="pais" id="pais">
+                    <select name="pais" id="pais" class="camposForm">
                         <option value="">País</option>
                         <option value="AR">Argentina</option>
                         <option value="BO">Bolivia</option>
@@ -63,8 +66,9 @@
                         <option value="VE">Venezuela</option>
                     </select>
                 </div>
-                <div>
+                <div class="div-terminos-condiciones">
                     <input type="checkbox" id="terminos">
+                    <label for="terminos" class="chkTerminos"></label>
                     <label type="textoCheck" for="terminos">Acepto términos y condiciones</label>
                 </div>
                 <div>
