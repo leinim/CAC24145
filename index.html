@@ -99,16 +99,19 @@
                     <!-- Agrega más elementos carousel-item según sea necesario -->
                 </div>
                 <div class="btnCarouselContainer">
-                    <a class="carousel-control-prev btnCarousel" href="#carouselFeaturedBooks" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only"> < Anterior</span>
-                </a>
-                <a class="carousel-control-next btnCarousel" href="#carouselFeaturedBooks" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Siguiente > </span>
-                </a>
+                    <a class="carousel-control-prev btnCarousel" href="#carouselFeaturedBooks" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">
+                            < Anterior</span>
+                    </a>
+                    <a class="carousel-control-next btnCarousel" href="#carouselFeaturedBooks" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente > </span>
+                    </a>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -306,57 +309,67 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <span>© 2024 Catálogo de Libros</span>
+        <div>
+            <h3>Menú</h3>
             <ul>
-                <li><a href="#">Términos y Condiciones</a></li>
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Administrador de Libros</a></li>
+                <li>Inicio</li>
+                <li>Catálogo</li>
+                <li>Registrarse</li>
+                <li>Iniciar sesión</li>
             </ul>
         </div>
+
+        <div>
+            <img src="" alt="">
+            <h3></h3>
+            <ul>
+                <li>Ayuda</li>
+                <li>Términos y condiciones</li>
+            </ul>
+        </div>
+
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-                const carouselItems = document.querySelectorAll('.carousel-item');
-                const prevButton = document.querySelector('.carousel-control-prev');
-                const nextButton = document.querySelector('.carousel-control-next');
-                let currentIndex = 0;
+            const carouselItems = document.querySelectorAll('.carousel-item');
+            const prevButton = document.querySelector('.carousel-control-prev');
+            const nextButton = document.querySelector('.carousel-control-next');
+            let currentIndex = 0;
 
-                // Función para mostrar el slide actual
-                function showSlide(index) {
-                    carouselItems.forEach(item => item.style.display = 'none');
-                    carouselItems[index].style.display = 'block';
+            // Función para mostrar el slide actual
+            function showSlide(index) {
+                carouselItems.forEach(item => item.style.display = 'none');
+                carouselItems[index].style.display = 'block';
+            }
+
+            // Función para mostrar el slide anterior
+            function prevSlide() {
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = carouselItems.length - 1;
                 }
-
-                // Función para mostrar el slide anterior
-                function prevSlide() {
-                    currentIndex--;
-                    if (currentIndex < 0) {
-                        currentIndex = carouselItems.length - 1;
-                    }
-                    showSlide(currentIndex);
-                }
-
-                // Función para mostrar el siguiente slide
-                function nextSlide() {
-                    currentIndex++;
-                    if (currentIndex >= carouselItems.length) {
-                        currentIndex = 0;
-                    }
-                    showSlide(currentIndex);
-                }
-
-                // Mostrar el primer slide al cargar la página
                 showSlide(currentIndex);
+            }
 
-                // Event listener para el botón anterior
-                prevButton.addEventListener('click', prevSlide);
+            // Función para mostrar el siguiente slide
+            function nextSlide() {
+                currentIndex++;
+                if (currentIndex >= carouselItems.length) {
+                    currentIndex = 0;
+                }
+                showSlide(currentIndex);
+            }
 
-                // Event listener para el botón siguiente
-                nextButton.addEventListener('click', nextSlide);
-            });
+            // Mostrar el primer slide al cargar la página
+            showSlide(currentIndex);
+
+            // Event listener para el botón anterior
+            prevButton.addEventListener('click', prevSlide);
+
+            // Event listener para el botón siguiente
+            nextButton.addEventListener('click', nextSlide);
+        });
 
 
     </script>

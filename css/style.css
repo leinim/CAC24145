@@ -11,7 +11,11 @@ body {
 
 }
 
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 
 
@@ -311,32 +315,13 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #343a40;
+    background-color: #695853;
+    width: 100%;
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    
 }
 
-.footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
 
-.footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.footer ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer span {
-    display: block;
-    margin-bottom: 10px;
-}
 
 /* Sección Detalle */
 .detalle-card {
@@ -371,5 +356,5 @@ body {
 }
 
 #detalle-volver:hover {
-    background-color: black;
+    opacity: .9;
 }
