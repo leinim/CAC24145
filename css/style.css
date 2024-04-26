@@ -480,8 +480,9 @@ nav h1 {
 }
 
 /* Comun a Registro y Login */
+
 .fondoLibros {
-    background: linear-gradient(to right top, #aca8a8c2, #7265658a), url(./assets/imgs/fondo-libros.jpg);
+    background: linear-gradient(to right top, #aca8a8c2, #7265658a), url(../assets/imgs/fondo-libros.jpg);
     height: 85vh;
     margin-top: 0;
     display: flex;
