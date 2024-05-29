@@ -576,3 +576,7 @@ nav h1 {
     font-weight: 600;
     text-decoration: none;
 }
+
+.error {
+    color: red;
+}
